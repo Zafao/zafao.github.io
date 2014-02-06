@@ -1,0 +1,35 @@
+@font-face{
+  font-family: TT;
+  src: url("tt0857m_.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: TT;
+}
+
+section {
+  padding: 200px 0;
+}
+
+section h2 {
+  margin: auto;
+  font-size: 80px;
+  font-weight: normal;
+}
+
+section p.lead {
+  font-size: 24px;
+  margin: 30px 0 70px;
+}
+
+#front {
+  background: #D50122;
+  color: #fff;
+  text-align: center;
+}
+
+
