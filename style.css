@@ -3,16 +3,42 @@
   src: url("tt0857m_.ttf");
 }
 
-body {
-  margin: 0;
-}
-
 html {
   font-family: TT;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  text-align: center;
+  overflow: hidden;
+  padding: 250px;
+}
+
+section h2 {
+  margin: auto;
+  font-size: 80px;
+  font-weight: normal;
+}
+
+section p.lead {
+  font-size: 24px;
+  margin: auto;
+}
+
 a {
   color: #D50122;
+}
+
+.transition {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 header {
@@ -27,37 +53,14 @@ header a {
   float: right;
 }
 
-section h2 {
-  margin: auto;
-  font-size: 80px;
-  font-weight: normal;
-}
-
-section p.lead {
-  font-size: 24px;
-  margin: auto;
-}
-
 #front {
-  padding: 200px 0 200px 0;
   background: #D50122;
   color: #fff;
-  text-align: center;
-}
-
-#verse {
-  margin: 100px;
-  padding: 100px 0 100px 0;
-}
-
-#verse img {
-  padding-left: 200px;
 }
 
 .info {
   font-size: 2em;
   float: right;
-  padding-right: 200px;
   text-align: right;
 }
 
