@@ -8,22 +8,33 @@ html, body {
   height: 100%;
 }
 
+html, body, div, p {
+  margin:0;
+  padding:0;
+}
+
 .vertical-align {
-  position: relative;
-  top: 50%;
+  display:table-cell;
+  vertical-align:middle;
 }
 
 body {
   font-family: 'Asafe', sans-serif;
   font-weight: 300;
-  position: relativse;
+  position: relative;
+}
+
+.section {
+  display:table;
+  width:100%;
+  overflow:auto;
+  min-height: 100%;
+  margin: 0 auto;
 }
 
 #front {
   background: #D50122;
   color: #fff;
-  min-height: 100%;
-  margin: 0 auto;
 }
 
 #front h1 {
@@ -34,8 +45,8 @@ body {
 }
 
 #verse {
-  min-height: 100%;
-  margin: 0 auto;
+  padding-right: 25%;
+  padding-left: 25%;
 }
 
 .info {
