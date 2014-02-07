@@ -7,45 +7,39 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
     <title>Asafe S. Gonçalves</title>
   </head>
 
   <body>
 
-    <header class="transition">
-      <a href="#">Contato</a>
-    </header>
-
     <section id="front">
-      <img src="ag_white.png">
-      <h2>Asafe Gonçalves</h2>
-      <p class="lead">Advocacia</p>
+      <div class="row text-center centralize">
+        <img src="img/ag_white.png" alt="">
+        <h1 class="main-title-logo">Asafe Gonçalves</h1>
+        <p>Advocacia</p>
+      </div>
     </section>
+
 
     <section id="verse">
-      <img src="ag_red.png">
-
-      <div class="info">
-        <p>ASAFE SILVA GONÇALVES</p>
-        <p class="small"><i>OAB/DF 42.570</i></p>
-
-        <p>+55 (61) 93057997</p>
-        <p>+55 (61) 93057997</p>
-        <p class="email"><a href="mailto:goncalves@asafe.me">goncalves@asafe.me</a></p>
-      </div class="info">
-
+      <div class="row text-center">
+        <div class="large-6 columns">
+          <img src="img/ag_red.png">
+        </div>
+        <div class="large-6 columns info">
+          <p>ASAFE SILVA GONÇALVES</p>
+          <p><i>OAB/DF 42.570</i></p>
+          <p>+55 (61) 93057997</p>
+          <p>+55 (61) 93057997</p>
+          <p class="email"><a href="mailto:goncalves@asafe.me">goncalves@asafe.me</a></p>
+        </div>
+      </div>
     </section>
 
-    <script type="text/javascript">
-      $(document).on("scroll", function() {
-      if($(window).scrollTop() <= 1)
-        $("header").removeClass("scrolled");
-      else
-        $("header").addClass("scrolled");
-    });
-    </script>
   </body>
 </html>
