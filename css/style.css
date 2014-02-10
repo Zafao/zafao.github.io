@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Asafe";
-  src: url("../font/font.ttf")
+  src: url("../fonts/font.ttf")
   format("truetype");
 }
 
@@ -24,10 +24,49 @@ body {
   position: relative;
 }
 
-.next {
-  position: absolute;
-  margin-left: -25px;
-  text-align: center;
+.transition {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+}
+
+header img {
+  height: 50px;
+  padding-top: 20px;
+  visibility: hidden;
+}
+
+header.scrolled {
+  background-color: #D50122;
+  -webkit-box-shadow: 0px 1px 1px #D50122;
+  -moz-box-shadow: 0px 1px 1px #D50122;
+  box-shadow: 0px 1px 1px #D50122;
+}
+
+header.scrolled img {
+  visibility: visible;
+}
+
+.menu-items {
+  padding-top: 20px;
+  float: right;
+  list-style: none;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
 }
 
 .section {
@@ -39,19 +78,23 @@ body {
 }
 
 #front {
-  background: #e7ca52;
-  color: #606062;
+  background: #D50122;
+  color: #fff;
 }
 
 #front h1 {
   font-family: 'Asafe', sans-serif;
   margin: auto;
   font-weight: normal;
-  color: #606062;
+  color: #fff;
 }
 
 #front .next {
-  margin-top: 5em;
+  margin-top: .5em;
+}
+
+#front p {
+  font-size: 1.5em;
 }
 
 #verse {
@@ -60,26 +103,33 @@ body {
 }
 
 #about {
-  background: #D50122;
-  color: #fff;
+  /*background: #f1f1f1;*/
 }
 
 #about h1 {
   font-family: 'Asafe', sans-serif;
   margin: auto;
-  color: #fff;
   font-weight: normal;
   font-size: 6em;
   padding: 25px;
 }
 
+#about img {
+  margin-top: 25px;
+}
+
 #about p {
+  text-align: justify;
   padding: 25px;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+
+#about .social {
+  padding-top: 1em;
 }
 
 #verse {
-  background: #f1f1f1;
+  /*background: #e7ca52;*/
 }
 
 #verse p {
