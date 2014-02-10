@@ -24,6 +24,13 @@ body {
   position: relative;
 }
 
+.next {
+  position: absolute;
+  margin-top: 6em;
+  margin-left: -25px;
+  text-align: center;
+}
+
 .section {
   display:table;
   width:100%;
