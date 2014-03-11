@@ -1,3 +1,13 @@
+function resize() {
+  var heights = window.innerHeight;
+  document.getElementById("front").style.height = heights + "px";
+  document.getElementById("verse").style.height = heights + "px";
+}
+
+window.onresize = function() {
+    resize();
+};
+
 $(function() {
   $(document).on("scroll", function() {
     if($(window).scrollTop() <= 1) {
@@ -17,3 +27,5 @@ $(function() {
     currentClass: 'active'
   });
 });
+
+resize();

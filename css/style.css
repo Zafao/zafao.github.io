@@ -21,7 +21,7 @@ html, body, div, p {
 body {
   font-family: 'Asafe', sans-serif;
   font-weight: 300;
-  position: relative;
+/*  position: relative;*/
 }
 
 .transition {
